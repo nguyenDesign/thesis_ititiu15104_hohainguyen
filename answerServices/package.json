@@ -1,0 +1,28 @@
+{
+  "name": "showquestionservices",
+  "version": "1.0.0",
+  "description": "display questions",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Ho Hai Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.5",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.8.11",
+    "mysql": "^2.17.1",
+    "path": "^0.12.7",
+    "validator": "^12.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

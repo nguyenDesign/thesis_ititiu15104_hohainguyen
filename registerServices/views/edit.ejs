@@ -1,0 +1,66 @@
+<head>
+	 <!-- Required meta tags -->
+	 <meta charset="utf-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+	 <!-- Bootstrap CSS -->
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
+	 <title>Edit User!</title>
+</head>
+
+<div class="container">
+	<!-- edit form column -->
+	<div class="col-lg-12 text-lg-center">
+		<h2>User Editor</h2>
+		<br>
+		<br>
+	</div>
+	<div class="col-lg-8 push-lg-4 personal-info">
+		 <form action="update/<%=user._id%>" method="POST">
+			<div class="form-group row">
+				<label class="col-lg-3 col-form-label form-control-label">Name</label>
+				<div class="col-lg-9">
+					<input class="form-control" type="text" name="name" value="<%=user.name%>" required/>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-lg-3 col-form-label form-control-label">Email</label>
+				<div class="col-lg-9">
+					<input class="form-control" type="email" name="email" value="<%=user.email%>" />
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-lg-3 col-form-label form-control-label">Password</label>
+				<div class="col-lg-9">
+					<input class="form-control" type="password" name="password" required/>
+				</div>
+			</div>
+			<div class="form-group row">
+				<label class="col-lg-3 col-form-label form-control-label">Phone Number</label>
+				<div class="col-lg-9">
+					<input class="form-control" type="number" name="phone" value="<%=user.phone%>" required/>
+				</div>
+				
+			</div>
+			<!-- TO SELECT NEW DOCTOR FOR A PATIENT IF NECESSARY -->
+			<label>Manged by (patients only)</label>		
+			<select name="managed_by">
+				<% doctors.forEach(function(doctor){%>
+				<option value="<%= doctor.email %>"><%= doctor.email %></option>
+				<%})%>
+			</select>
+
+			<div class="form-group">
+				<label>Role cannot be edited</label>
+			</div>
+			<div class="form-group row">
+				<div class="col-lg-9">
+					<input type="reset" class="btn btn-secondary" value="Cancel" />
+					<input type="submit" class="btn btn-primary" value="Save Changes" />
+					<a href="/api/register">Change your mind? Go back</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>

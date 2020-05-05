@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Patient Remote News</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
+
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/vendor.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <!-- For handling sub links -->
+   <style>
+	ul > li { width:100px; float:left; }
+	ul > li > ul { display:none; }
+	ul > li:hover > ul { display:block; }
+	ul > li > ul { padding-left:10px; }
+   </style>
+   <!-- favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body id="top">
+
+	<!-- header 
+   ================================================== -->
+   <header class="short-header">   
+
+   	<div class="gradient-block"></div>	
+
+   	<div class="row header-content">
+		<h3><a href="/">Remote Patient Management</a></h3>
+		<nav id="main-nav-wrap">
+			<ul class="main-navigation sf-menu">
+			
+			  <li><a href="/"> Home</a></li>									
+			 
+			  <li><a href="/about" title="">About</a></li>	
+			  <li><a href="/contact" title="">Contact</a></li>										
+			</ul>
+		</nav> <!-- end main-nav-wrap -->
+
+		<div class="search-wrap">
+			
+			<form role="search" method="get" class="search-form" action="#">
+				<label>
+					<span class="hide-content">Search for:</span>
+					<input type="search" class="search-field" placeholder="Type Your Keywords" value="" name="s" title="Search for:" autocomplete="off">
+				</label>
+				<input type="submit" class="search-submit" value="Search">
+			</form>
+
+			<a href="#" id="close-search" class="close-btn">Close</a>
+
+		</div> <!-- end search wrap -->		
+   		
+   	</div>     		
+   	
+   </header> <!-- end header -->
+
+
+   <!-- page header
+   ================================================== -->
+   <section id="page-header">
+   	<div class="row current-cat">
+   		<div class="col-full">
+   			<h1>Welcome to Patient Remote</h1>
+   		</div>   		
+   	</div>
+   </section>
+
+   
+   <!-- masonry
+   ================================================== -->
+   <section id="bricks" class="with-top-sep">
+   	<div class="row masonry">
+
+   		<!-- brick-wrapper -->
+         <div class="bricks-wrapper">
+
+         	<div class="grid-sizer"></div>
+
+         	<article class="brick entry format-standard animate-this">
+
+               <div class="entry-thumb">
+                  <a href="/api/answer" class="thumb-link">
+	                  <img src="images/quiz.jpg" alt="building">             
+                  </a>
+               </div>
+
+               <div class="entry-text">
+               	<div class="entry-header">
+               		<div class="entry-meta">
+               			<span class="cat-links">
+               				<a href="/api/answer">Daily Quiz</a>
+               			</span>			
+               		</div>
+               		<h1 class="entry-title"><a href="/api/answer">Answer your daily question today</a></h1>
+               	</div>
+					<div class="entry-excerpt">
+						Daily questions help to monitor your health status
+					</div>
+               </div>
+        	</article> <!-- end article -->
+        
+        	<article class="brick entry format-video animate-this">
+
+               	<div class="entry-thumb video-image">
+                  <a href="/api/record" data-lity>
+	                  <img src="images/answer_record.jpg" alt="bokeh">                   
+                  </a>
+               	</div>
+
+               	<div class="entry-text">
+               	<div class="entry-header">
+               		<div class="entry-meta">
+               			<span class="cat-links">
+               				<a href="/api/record">Quiz History</a>               			
+               			</span>			
+               		</div>
+               		<h1 class="entry-title"><a href="/api/record">View all of your answer record</a></h1>	
+               	</div>
+						<div class="entry-excerpt">
+							A picture of your health recently.
+						</div>
+               </div> 
+			</article> <!-- end article -->
+			<article class="brick entry format-video animate-this">
+
+				<div class="entry-thumb video-image">
+			   <a href="/api/addQuestion" data-lity>
+				   <img src="images/medical-deputation.jpg" alt="bokeh">                   
+			   </a>
+				</div>
+
+				<div class="entry-text">
+				<div class="entry-header">
+					<div class="entry-meta">
+						<span class="cat-links">
+							<a href="/api/addQuestion">Featuring for doctors</a>               			
+						</span>			
+					</div>
+					<h1 class="entry-title"><a href="/api/addQuestion">Create new questions for the patients</a></h1>	
+				</div>
+					 <div class="entry-excerpt">
+						Create new questions for your patients.
+					 </div>
+				</div> 
+			 </article> <!-- end article -->
+			 <article class="brick entry format-video animate-this">
+
+				<div class="entry-thumb video-image">
+			   <a href="/api/record" data-lity>
+				   <img src="images/doctor_mana.jpg" alt="bokeh">                   
+			   </a>
+				</div>
+
+				<div class="entry-text">
+				<div class="entry-header">
+					<div class="entry-meta">
+						<span class="cat-links">
+							<a href="/api/addQuestion/doctor/record">Featuring for doctors</a>               			
+						</span>			
+					</div>
+					<h1 class="entry-title"><a href="/api/addQuestion/doctor/record">Manage your patients result</a></h1>	
+				</div>
+					 <div class="entry-excerpt">
+						Recording patients' health status that under doctors' management
+					 </div>
+				</div> 
+		 	</article> <!-- end article -->
+        </div> <!-- end brick-wrapper --> 
+   	</div> <!-- end row -->
+   </section> <!-- bricks -->
+
+   
+   <!-- footer
+   ================================================== -->
+   <footer>
+
+   	<div class="footer-main">
+
+   		<div class="row">  
+
+	      	<div class="col-four tab-full mob-full footer-info">            
+
+	            <h4>About Our Site</h4>
+	            	<p>
+						Patient Remote is a project created by students and lecturer of International University
+		        	</p>
+
+		    </div> <!-- end footer-info -->
+
+	      	<div class="col-two tab-1-3 mob-1-2 site-links">
+
+	      		<h4>Site Links</h4>
+
+	      		<ul>
+	      			<li>
+						<a href="#">About Us</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Terms</a></li>
+						<li><a href="#">Privacy Policy</a>
+					</li>
+				</ul>
+
+	      	</div> <!-- end site-links -->  
+
+	      	<div class="col-two tab-1-3 mob-1-2 social-links">
+
+	      		<h4>Social</h4>
+
+	      		<ul>
+	      			<li><a href="#">Twitter</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Dribbble</a></li>
+						<li><a href="#">Google+</a></li>
+						<li><a href="#">Instagram</a></li>
+					</ul>         	
+	      	</div> <!-- end social links --> 
+   	</div> <!-- end footer-main -->
+
+      <div class="footer-bottom">
+      	<div class="row">
+
+      		<div class="col-twelve">
+	      		<div class="copyright">
+		         	<span>© Copyright Abstract 2016</span> 
+		         	<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>		         	
+		         </div>
+
+		         <div id="go-top">
+		            <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon icon-arrow-up"></i></a>
+		         </div>         
+	      	</div>
+
+      	</div> 
+      </div> <!-- end footer-bottom -->  
+
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div> 
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
+</html>

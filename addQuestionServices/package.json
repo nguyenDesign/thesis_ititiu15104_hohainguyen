@@ -1,0 +1,27 @@
+{
+  "name": "addquestionservices",
+  "version": "1.0.0",
+  "description": "this is for adding more question into question set",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Ho Hai Nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.8.7",
+    "mysql": "^2.17.1",
+    "validator": "^12.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

@@ -1,0 +1,52 @@
+version: '3'
+
+services:
+  homepageServices:
+    image: home
+    build: './homepageServices'
+    environment:
+      NODE_ENV: production
+    ports:
+      - "3000:3000"
+  
+  registerservices:
+    image: registerservices
+    build: './registerServices'
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3002:3002
+  
+  answerServices:
+    image: answer_services
+    build: './answerServices'
+    environment:
+      NODE_ENV: production
+    ports:
+      - "3003:3003"
+
+  answerRecordServices:
+    image: record_services
+    build: './answerRecordServices'
+    environment: 
+      NODE_ENV: production
+    ports: 
+      - "3004:3004"
+
+  addQuestionServices:
+    image: add_question_services
+    build: './addQuestionServices'
+    environment:
+      NODE_ENV: production
+    ports:
+      - "3001:3001"     
+  
+  nginx:
+    image: nginx:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+   
+        
+     
